@@ -42,7 +42,16 @@ html{
   background-repeat: no-repeat;
   height: 25rem;
   display: flex;
+
+}
+
+.arrivals-container{
+  width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .arrivals{
@@ -51,12 +60,8 @@ html{
   color: white;
   margin-top: 9rem;
   margin-bottom: auto;
-  margin-left: 11rem;
   padding: 2rem 3rem;
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .arrivals p{
@@ -206,5 +211,89 @@ html{
   #glasses{
     display: none;
   }
+
+}
+
+
+
+@media only screen and (max-width: 470px){
+
+  html{
+    font-size: 14px;
+    max-width: 470px;
+    overflow-x: hidden;
+
+  }
+
+  .title{
+    width: 470px;
+    justify-content: center;
+
+
+  }
+
+  .header p{
+    display: none;
+  }
+
+  .arrivals-container{
+    width: 470px;
+  }
+
+
+  .arrivals{
+    margin-top: 20rem;
+    padding: 1rem 2rem;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .arrivals p{
+    font-size: 0.77rem;
+  }
+
+  .arrivals h1{
+    font-size: 1rem;
+  }
+
+  .items{
+    width: 470px;
+  }
+
+  .item{
+    width: 80%;
+    height: auto;
+    margin: 0 2rem 0 2rem;
+  }
+
+  #watch,
+    #glasses{
+      display: none;
+    }
+
+  .contact{
+    width: 470px;
+    flex-direction: column;
+  }
+
+  .location,
+    .hours{
+      width: 82%;
+      margin: 0 2rem 0 2rem;
+    }
+
+  .location{
+      padding-bottom: 1.5rem;
+  }
+
+  .hours{
+      padding-bottom: 2.5rem;
+  }
+
+  .footer p{
+      width: 470px;
+      text-align: center;
+  }
+
 
 }
